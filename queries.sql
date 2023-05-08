@@ -221,4 +221,8 @@ ORDER BY number_visits DESC
 LIMIT 1;  
 
 
+/* project 4th module 2nd week performance audit */
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vets_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
 
