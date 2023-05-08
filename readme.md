@@ -108,6 +108,11 @@ That's it! Congratulations, you have created your database and connected to it. 
 - GitHub: [@githubhandle](https://github.com/AmineDerbal)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-el-amine-derbal-4038541b6/)
 
+👤  Isaac Gakure Wanyoike
+
+ - GitHub: [@githubhandle](https://github.com/gaks1)
+ - Twitter: [@twitterhandle](https://twitter.com/bopplov)
+-  LinkedIn: [LinkedIn](https://www.linkedin.com/in/isaac-wanyoike-1841a8172/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
