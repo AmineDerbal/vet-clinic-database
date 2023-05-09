@@ -32,3 +32,41 @@ CREATE TABLE invoices(
   FOREIGN KEY(medical_history_id)
   REFERENCES medical_histories(id)
 );
+
+--create table treatments
+CREATE TABLE treatments(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  type VARCHAR(255),
+  name VARCHAR(255),
+  primary key(id)
+);
+
+-- create table invoice_items
+CREATE TABLE invoice_items(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  unit_price decimal,
+  quantity int,
+  total_price decimal,
+  invoice_id int,
+  treatment_id int,
+  primary key(id),
+  CONSTRAINT fk_invoices
+  FOREIGN KEY (invoice_id)
+  REFERENCES invoices(id),
+  CONSTRAINT fk_treatments
+  FOREIGN KEY (treatment_id)
+  REFERENCES treatments(id)
+);
+
+-- create table treatment_history
+CREATE TABLE treatment_history(
+  treatment_id int,
+  medical_history_id int,
+  primary key(treatment_id, medical_history_id),
+  CONSTRAINT fk_treatment
+  FOREIGN KEY (treatment_id)
+  REFERENCES treatments(id),
+  CONSTRAINT fk_medical_history
+  FOREIGN KEY (medical_history_id)
+  REFERENCES medical_histories(id)
+);
